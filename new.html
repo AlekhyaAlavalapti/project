@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Donation Experience</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(145deg, #f0f8ff, #fafafa);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 1000px;
+      background-color: #fff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .header {
+      background-color: #4CAF50;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      border-bottom: 4px solid #3e8e41;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .header p {
+      font-size: 1rem;
+      margin: 5px 0 20px 0;
+      color: #ddd;
+    }
+
+    .main {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .live-stream {
+      flex: 2;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+      margin-right: 20px;
+    }
+
+    .live-stream iframe {
+      width: 200%;
+      height: 200%;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .live-stream::before {
+      content: 'LIVE';
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #FF0000;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .donor-info {
+      flex: 1;
+      text-align: left;
+      padding: 20px;
+    }
+
+    .donor-info h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .donor-info p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .join-live-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #3b5998;
+      color: white;
+      font-size: 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .join-live-btn:hover {
+      background-color: #2b4778;
+    }
+
+    .impact-stats {
+      background-color: #eee;
+      padding: 20px;
+      text-align: center;
+      border-top: 2px solid #ddd;
+    }
+
+    .impact-stats h3 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    .stats-list {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .stats-list li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .stats-list li .number {
+      font-size: 2.5rem;
+      color: #4CAF50;
+      font-weight: bold;
+    }
+
+    .stats-list li .label {
+      font-size: 1rem;
+      color: #777;
+    }
+
+    footer {
+      padding: 15px;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Header -->
+  <div class="header">
+    <h1>Watch Your Impact Live</h1>
+    <p>See how your donations are being used in real-time.</p>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <!-- Live Stream -->
+    <div class="live-stream">
+      <!-- Embed Instagram Live (or any other platform) -->
+      <iframe src="https://www.instagram.com/live" title="Instagram Live Stream"></iframe>
+    </div>
+
+    <!-- Donor Info -->
+    <div class="donor-info">
+      <h2>Join Us Live</h2>
+      <p>Your generosity is making a difference. Tune in to see how your donations are changing lives.</p>
+      <a href="https://www.instagram.com/live" target="_blank" class="join-live-btn">Join Live </a>
+    </div>
+  </div>
+
+  <!-- Impact Statistics -->
+  <div class="impact-stats">
+    <h3>Your Impact So Far</h3>
+    <ul class="stats-list">
+      <li>
+        <span class="number">500+</span>
+        <span class="label">Families Helped</span>
+      </li>
+      <li>
+        <span class="number">1000+</span>
+        <span class="label">Meals Distributed</span>
+      </li>
+      <li>
+        <span class="number">200+</span>
+        <span class="label">Donations recieved</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+</body>
+</html>
